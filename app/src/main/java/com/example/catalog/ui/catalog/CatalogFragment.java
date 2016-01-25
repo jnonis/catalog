@@ -108,7 +108,7 @@ public class CatalogFragment extends Fragment implements LoaderManager.LoaderCal
         }
         mItemsView.setAdapter(mAdapter);
 
-        getActivity().getSupportLoaderManager().initLoader(0, null, this);
+        startLoader();
 
         if (savedInstanceState == null) {
             startRequest();
